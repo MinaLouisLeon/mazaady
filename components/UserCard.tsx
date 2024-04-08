@@ -10,7 +10,7 @@ const UserCard = ({userName,description}:{
   description: string
 }) => {
   return (
-    <Card className=" mt-4 md:mt-0 mx-4 md:mx-0 rounded-[24px] p-6">
+    <Card className=" mt-4 md:mt-0 mx-4 md:mx-0 rounded-[24px] py-4 px-2 xs:p-4">
         <Image alt="userImage" src={"/user.jpg"} width={100} height={100} className="rounded-[20px] h-[100px]" />
         <h2 className="text-[24px] leading-[23px] font-bold mt-4" >{userName}</h2>
         <p className="max-w-[400px] mt-2 text-[14px] leading-[20px]">

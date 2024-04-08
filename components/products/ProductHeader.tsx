@@ -9,7 +9,7 @@ const ProductHeader = ({ itemsCount }: {
     return (
         <>
             <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-row items-center gap-8">
+                <div className="flex flex-row items-center justify-between w-full">
                     <ProductHeaderLink text="Products" path="/userID/Products" />
                     <ProductHeaderLink text="Articles" path="/userID/Articles" />
                     <ProductHeaderLink text="Reviews" path="/userID/Reviews" />
