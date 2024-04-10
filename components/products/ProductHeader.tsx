@@ -9,12 +9,12 @@ const ProductHeader = ({ itemsCount }: {
     return (
         <>
             <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center justify-between md:justify-start md:gap-4 w-full">
                     <ProductHeaderLink text="Products" path="/userID/Products" />
                     <ProductHeaderLink text="Articles" path="/userID/Articles" />
                     <ProductHeaderLink text="Reviews" path="/userID/Reviews" />
                 </div>
-                <AddReviewButton className="hidden md:flex" />
+                <AddReviewButton className="hidden lg:flex" />
             </div>
             <h2 className=" font-extrabold text-[24px] leading-[33px] mt-4">
                 {pathname.split("/")[2]}

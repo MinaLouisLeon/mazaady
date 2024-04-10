@@ -4,9 +4,9 @@ const TimeLabel = ({time,label}:{
   label : string;
 }) => {
   return (
-    <div className="w-[57px] h-[28px] md:w-[105px] md:h-[40px] bg-[#FFF5E9] flex items-center justify-center rounded-[14px] md:rounded-[24px] md:ml-4">
-      <p className="font-bold text-[12px] md:text-[20px] leading-[16px] md:leading-[28px] text-[#FF951D]">{time}
-        <span className="text-[8px] md:text-[14px] leading-[10px] md:leading-[10px]">{" "}{label}</span>
+    <div className="w-[57px] h-[28px] lg:w-[105px] lg:h-[40px] bg-[#FFF5E9] flex items-center justify-center rounded-[14px] lg:rounded-[24px] lg:ml-4">
+      <p className="font-bold text-[12px] lg:text-[20px] leading-[16px] lg:leading-[28px] text-[#FF951D]">{time}
+        <span className="text-[8px] lg:text-[14px] leading-[10px] lg:leading-[10px]">{" "}{label}</span>
       </p>
     </div>
   )

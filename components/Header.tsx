@@ -15,9 +15,9 @@ import { pathList } from '@/constants/HeaderLinks';
 const Header = () => {
     const pathname = usePathname();
     return (
-        <header className="bg-white  border-b h-[68px] relative">
-            <div className="mx-auto max-w-screen-2xl flex h-full  items-center gap-1 md:gap-8 px-4 sm:px-6 lg:px-8">
-                <Button variant={'ghost'} className='md:hidden px-0'>
+        <header className="bg-white  border-b h-[68px] relative w-screen">
+            <div className="mx-auto  max-w-screen-xl flex items-center gap-8 px-4 sm:px-6 lg:px-8">
+                <Button variant={'ghost'} className='lg:hidden px-0'>
                     <span className="sr-only">toggle menu</span>
                     <Image alt='menu' src={MenuIcon} width={24} height={24} />
                 </Button>
@@ -25,8 +25,8 @@ const Header = () => {
                     <Image alt="Mazaady" src={Logo} width={108} height={43} />
                 </Link>
 
-                <div className="flex flex-1 items-center justify-end md:justify-between mr-4 md:mr-0">
-                    <nav aria-label="Global" className="hidden md:block">
+                <div className="flex flex-1 items-center justify-end lg:justify-between mr-4 lg:mr-0">
+                    <nav aria-label="Global" className="hidden lg:block">
                         <ul className="flex items-center gap-6 text-sm">
                             {pathList.map((item) => (
                                 <li key={item.name} className='h-[68px] flex flex-col justify-center items-center'>
@@ -43,21 +43,21 @@ const Header = () => {
                         <Button variant={"ghost"} className='px-0 hover:bg-transparent'>
                             <Image alt="search" src={SearchIcon} width={24} height={24} />
                         </Button>
-                        <div className='h-[40px] w-[1px] bg-[#FFEAD2] hidden md:block' aria-hidden="true"></div>
+                        <div className='h-[40px] w-[1px] bg-[#FFEAD2] hidden lg:block' aria-hidden="true"></div>
                         <Button variant={"ghost"} className='px-0 hover:bg-transparent'>
                             <Image alt="notification" src={NotificationIcon} width={24} height={24} />
                         </Button>
-                        <div className='h-[40px] w-[1px] bg-[#FFEAD2] hidden md:block' aria-hidden="true"></div>
-                        <Avatar className='h-[24px] w-[24px] md:w-[40px] md:h-[40px]'>
+                        <div className='h-[40px] w-[1px] bg-[#FFEAD2] hidden lg:block' aria-hidden="true"></div>
+                        <Avatar className='h-[24px] w-[24px] lg:w-[40px] lg:h-[40px]'>
                             <AvatarImage src={"/user.jpg"}/>
                         </Avatar>
-                        <Button className=' hidden md:flex h-[40px] rounded-[10px] text-white w-fit font-bold text-[14px] leading-[19px] gap-2 bg-gradient-to-r from-[#D20653] to-[#FF951D]'>
+                        <Button className=' hidden lg:flex h-[40px] rounded-[10px] text-white w-fit font-bold text-[14px] leading-[19px] gap-2 bg-gradient-to-r from-[#D20653] to-[#FF951D]'>
                             <Image alt="add new product" src={AddNewIcon} width={18} height={18} />
                             Add New Product
                         </Button>
-                        <Image alt="gloabal" src={GlobalIcon} width={24} height={24} className="hidden md:block" />
-                        <div className='h-[40px] w-[1px] bg-[#E0E0E0] hidden md:block' aria-hidden="true"></div>
-                        <Button variant={"ghost"} className='hover:bg-transparent hidden md:block font-bold text-[18px] leading-[23px] px-0'>
+                        <Image alt="gloabal" src={GlobalIcon} width={24} height={24} className="hidden lg:block" />
+                        <div className='h-[40px] w-[1px] bg-[#E0E0E0] hidden lg:block' aria-hidden="true"></div>
+                        <Button variant={"ghost"} className='hover:bg-transparent hidden lg:block font-bold text-[18px] leading-[23px] px-0'>
                             EN
                         </Button>
                     </div>

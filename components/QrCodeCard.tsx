@@ -18,7 +18,7 @@ const QrCodeCard = ({ userName, qrCode }: {
 }) => {
     const [showQrCode, setShowQrCode] = useState<boolean>(true);
     return (
-        <Card className="my-4 mx-4 md:mx-0 rounded-[24px] p-4 flex flex-col gap-2">
+        <Card className="my-4 mx-4 lg:mx-0 rounded-[24px] p-4 flex flex-col gap-2">
             <div className="flex items-center">
                 <h1 className="font-bold leading-[23px] text-[24px] ">QR Code</h1>
                 <div className="flex-1 flex items-center justify-end">
@@ -31,7 +31,7 @@ const QrCodeCard = ({ userName, qrCode }: {
                     <Button variant={"ghost"} className="hover:bg-transparent">
                         <Image alt="" src={DownloadIcon} width={24} height={24} />
                     </Button>
-                    <Button onClick={() => setShowQrCode(!showQrCode)} variant={"ghost"} className={`block md:hidden rounded-full px-2 py-0 mx-0 my-0 ${showQrCode ? "bg-[#FBE7EE] hover:bg-[#FBE7EE]" : "bg-[#F6F4F5] hover:bg-[#F6F4F5]"}`}>
+                    <Button onClick={() => setShowQrCode(!showQrCode)} variant={"ghost"} className={`block lg:hidden rounded-full px-2 py-0 mx-0 my-0 ${showQrCode ? "bg-[#FBE7EE] hover:bg-[#FBE7EE]" : "bg-[#F6F4F5] hover:bg-[#F6F4F5]"}`}>
                         <Image alt="show or hide Qr code" src={showQrCode ? ArrowDown : ArrowUp} width={24} height={24} />
                     </Button>
                 </div>
